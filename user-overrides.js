@@ -47,3 +47,7 @@ user_pref("browser.urlbar.suggest.history", false);
 user_pref("browser.urlbar.suggest.bookmark", false);
 user_pref("browser.urlbar.suggest.openpage", false);
 user_pref("browser.urlbar.suggest.topsites", false); // [FF78+]
+
+/* Others Tweaks */
+/* Mouse smoothscrolling */
+user_pref("general.smoothScroll.msdPhysics.enabled", true);
