@@ -36,12 +36,6 @@ user_pref("extensions.pocket.enabled", false); // Pocket Account [FF46+]
   * engine that respects privacy, then you probably don't need this ***/ 
  user_pref("keyword.enabled", true);
 
-/* 1601: control when to send a cross-origin referer
- * 0=always (default), 1=only if base domains match, 2=only if hosts match
- * [SETUP-WEB] Breakage: older modems/routers and some sites e.g banks, vimeo, icloud, instagram
- * If "2" is too strict, then override to "0" and use Smart Referer extension (Strict mode + add exceptions) ***/
-user_pref("network.http.referer.XOriginPolicy", 0);
-
 /* 5003: disable saving passwords
  * [NOTE] This does not clear any passwords already saved
  * [SETTING] Privacy & Security>Logins and Passwords>Ask to save logins and passwords for websites ***/
