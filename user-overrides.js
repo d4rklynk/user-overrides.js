@@ -51,3 +51,9 @@ user_pref("browser.urlbar.suggest.topsites", false); // [FF78+]
 /* Others Tweaks */
 /* Mouse smoothscrolling */
 user_pref("general.smoothScroll.msdPhysics.enabled", true);
+
+/* Forget History (but keep open tabs) */
+/* 5013: disable browsing and download history
+ * [NOTE] We also clear history and downloads on exit (2811)
+ * [SETTING] Privacy & Security>History>Custom Settings>Remember browsing and download history ***/
+user_pref("places.history.enabled", false);
