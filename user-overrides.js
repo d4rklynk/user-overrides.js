@@ -1,3 +1,5 @@
+/* USER OVERRIDES */
+
 /* override recipe: enable DRM and let me watch videos ***/
    // user_pref("media.gmp-widevinecdm.enabled", true); // 2021 default-inactive in user.js
    user_pref("media.eme.enabled", true); // 2022
