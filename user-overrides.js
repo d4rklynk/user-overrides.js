@@ -21,7 +21,7 @@ user_pref("privacy.cpd.history", false); // 2812 to match when you use Ctrl-Shif
  * 0=always (default), 1=only if base domains match, 2=only if hosts match
  * [SETUP-WEB] Breakage: older modems/routers and some sites e.g banks, vimeo, icloud, instagram
  * If "2" is too strict, then override to "0" and use Smart Referer extension (Strict mode + add exceptions) ***/
-   //user_pref("network.http.referer.XOriginPolicy", 0);
+//user_pref("network.http.referer.XOriginPolicy", 0);
 
 user_pref("browser.messaging-system.whatsNewPanel.enabled", false); // What's New toolbar icon [FF69+]
 user_pref("extensions.pocket.enabled", false); // Pocket Account [FF46+]
@@ -58,4 +58,4 @@ user_pref("general.smoothScroll.msdPhysics.enabled", true);
 /* 5013: disable browsing and download history
  * [NOTE] We also clear history and downloads on exit (2811)
  * [SETTING] Privacy & Security>History>Custom Settings>Remember browsing and download history ***/
-user_pref("places.history.enabled", false);
+//user_pref("places.history.enabled", false);
