@@ -58,10 +58,10 @@ user_pref("general.smoothScroll.msdPhysics.enabled", true);
 /* 5013: disable browsing and download history
  * [NOTE] We also clear history and downloads on exit (2811)
  * [SETTING] Privacy & Security>History>Custom Settings>Remember browsing and download history ***/
-//user_pref("places.history.enabled", false);
+user_pref("places.history.enabled", false);
 
 /* WELCOME & WHAT'S NEW NOTICES ***/
-user_pref("browser.startup.homepage_override.mstone", ""); // master switch
+// user_pref("browser.startup.homepage_override.mstone", ""); // master switch
    // user_pref("startup.homepage_welcome_url", "");
    // user_pref("startup.homepage_welcome_url.additional", "");
    // user_pref("startup.homepage_override_url", ""); // What's New page after updates
