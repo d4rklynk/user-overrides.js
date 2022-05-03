@@ -9,3 +9,4 @@
 - Disable Saving passwords
 - Disable location bar suggestion types
 - Dark Theme by default (chrome only)
+- When using the address bar, suggest bookmarks
