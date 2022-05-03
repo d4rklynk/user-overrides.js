@@ -65,3 +65,11 @@ user_pref("browser.startup.homepage_override.mstone", ""); // master switch
    // user_pref("startup.homepage_welcome_url", "");
    // user_pref("startup.homepage_welcome_url.additional", "");
    // user_pref("startup.homepage_override_url", ""); // What's New page after updates
+
+/* APPEARANCE ***/
+   // user_pref("browser.download.autohideButton", false); // [FF57+]
+   // user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); // [FF68+] allow userChrome/userContent
+   // user_pref("ui.prefersReducedMotion", 1); // disable chrome animations [FF77+] [RESTART] [HIDDEN PREF]
+      // 0=no-preference, 1=reduce: with RFP this only affects chrome
+user_pref("ui.systemUsesDarkTheme", 1); // [FF67+] [HIDDEN PREF]
+      // 0=light, 1=dark: with RFP this only affects chrome
