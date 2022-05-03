@@ -60,12 +60,6 @@ user_pref("general.smoothScroll.msdPhysics.enabled", true);
  * [SETTING] Privacy & Security>History>Custom Settings>Remember browsing and download history ***/
 user_pref("places.history.enabled", false);
 
-/* WELCOME & WHAT'S NEW NOTICES ***/
-// user_pref("browser.startup.homepage_override.mstone", ""); // master switch
-   // user_pref("startup.homepage_welcome_url", "");
-   // user_pref("startup.homepage_welcome_url.additional", "");
-   // user_pref("startup.homepage_override_url", ""); // What's New page after updates
-
 /* APPEARANCE ***/
    // user_pref("browser.download.autohideButton", false); // [FF57+]
    // user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); // [FF68+] allow userChrome/userContent
