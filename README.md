@@ -8,5 +8,5 @@
 - URL bar acts as search bar
 - Disable Saving passwords
 - Disable location bar suggestion types
-- What's New enabled (after upgrading)
+- ~~What's New enabled (after upgrading)~~
 - Dark Theme by default (chrome only)
