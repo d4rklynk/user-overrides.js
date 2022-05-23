@@ -29,7 +29,7 @@ user_pref("privacy.cpd.history", false); // 2812 to match when you use Ctrl-Shif
 /*===== Control when to send a cross-origin referer =====*/
 /*======================(UNAPPLIED)======================*/
 
-// /!\ YOU PROBABLY WANT TO ENABLE THIS (uncomment if you need it)/!\
+// !!! YOU PROBABLY WANT TO ENABLE THIS (uncomment if you need it) !!!
 
   /* 1601: control when to send a cross-origin referer
  * 0=always (default), 1=only if base domains match, 2=only if hosts match
