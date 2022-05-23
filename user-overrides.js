@@ -1,8 +1,16 @@
 /* USER OVERRIDES */
 
+/*======================*/
+/*===== Enable DRM =====*/
+/*======================*/
+
 /* override recipe: enable DRM and let me watch videos ***/
    // user_pref("media.gmp-widevinecdm.enabled", true); // 2021 default-inactive in user.js
    user_pref("media.eme.enabled", true); // 2022
+
+/*==================================*/
+/*===== Enable Session Restore =====*/
+/*==================================*/
 
 /* override recipe: enable session restore ***/
 user_pref("browser.startup.page", 3); // 0102
@@ -17,18 +25,31 @@ user_pref("privacy.cpd.history", false); // 2812 to match when you use Ctrl-Shif
    // user_pref("privacy.cpd.cookies", false); // 2812 optional: default false arkenfox v94
    // user_pref("privacy.cpd.formdata", false); // 2812 optional
 
+/*=======================================================*/
+/*===== Control when to send a cross-origin referer =====*/
+/*======================(UNAPPLIED)======================*/
+
+// /!\ YOU PROBABLY WANT TO ENABLE THIS (uncomment if you need it)/!\
+
   /* 1601: control when to send a cross-origin referer
  * 0=always (default), 1=only if base domains match, 2=only if hosts match
  * [SETUP-WEB] Breakage: older modems/routers and some sites e.g banks, vimeo, icloud, instagram
  * If "2" is too strict, then override to "0" and use Smart Referer extension (Strict mode + add exceptions) ***/
-// YOU PROBABLY WANT TO ENABLE THIS BELOW (uncomment)
+
 //user_pref("network.http.referer.XOriginPolicy", 0);
 
-user_pref("browser.messaging-system.whatsNewPanel.enabled", false); // What's New toolbar icon [FF69+]
+/*==========================*/
+/*===== Disable Pocket =====*/
+/*==========================*/
+
 user_pref("extensions.pocket.enabled", false); // Pocket Account [FF46+]
    // user_pref("extensions.screenshots.disabled", true); // [FF55+]
    // user_pref("identity.fxaccounts.enabled", false); // Firefox Accounts & Sync [FF60+] [RESTART]
    // user_pref("reader.parse-on-load.enabled", false); // Reader View
+
+/*======================================*/
+/*===== URL bar acts as search bar =====*/
+/*======================================*/
 
  /* 0801: disable location bar using search 
   * Don't leak URL typos to a search engine, give an error message instead 
@@ -39,10 +60,18 @@ user_pref("extensions.pocket.enabled", false); // Pocket Account [FF46+]
   * engine that respects privacy, then you probably don't need this ***/ 
  user_pref("keyword.enabled", true);
 
+/*====================================*/
+/*===== Disable Saving passwords =====*/
+/*====================================*/
+
 /* 5003: disable saving passwords
  * [NOTE] This does not clear any passwords already saved
  * [SETTING] Privacy & Security>Logins and Passwords>Ask to save logins and passwords for websites ***/
 user_pref("signon.rememberSignons", false);
+
+/*=================================================*/
+/*===== Disable location bar suggestion types =====*/
+/*=================================================*/
 
 /* 5010: disable location bar suggestion types
  * [SETTING] Privacy & Security>Address Bar>When using the address bar, suggest ***/
@@ -51,17 +80,28 @@ user_pref("browser.urlbar.suggest.bookmark", true);
 user_pref("browser.urlbar.suggest.openpage", false);
 user_pref("browser.urlbar.suggest.topsites", false); // [FF78+]
 
-/* Others Tweaks */
+/*=========================*/
+/*===== Others Tweaks =====*/
+/*=========================*/
+
 /* Mouse smoothscrolling */
 user_pref("general.smoothScroll.msdPhysics.enabled", true);
 
-/* Forget History (but keep open tabs) */
+/*===============================================*/
+/*===== Forget History (but keep open tabs) =====*/
+/*===============================================*/
+
 /* 5013: disable browsing and download history
  * [NOTE] We also clear history and downloads on exit (2811)
  * [SETTING] Privacy & Security>History>Custom Settings>Remember browsing and download history ***/
 user_pref("places.history.enabled", false);
 
-/* APPEARANCE ***/
+/*===============================================================================*/
+/*============================ Dark Theme by default ============================*/
+/*====== (only applied to chrome not applied within website because of RFP) =====*/
+/*===============================================================================*/
+
+/* APPEARANCE */
    // user_pref("browser.download.autohideButton", false); // [FF57+]
    // user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); // [FF68+] allow userChrome/userContent
    // user_pref("ui.prefersReducedMotion", 1); // disable chrome animations [FF77+] [RESTART] [HIDDEN PREF]
