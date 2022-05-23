@@ -21,6 +21,7 @@ user_pref("privacy.cpd.history", false); // 2812 to match when you use Ctrl-Shif
  * 0=always (default), 1=only if base domains match, 2=only if hosts match
  * [SETUP-WEB] Breakage: older modems/routers and some sites e.g banks, vimeo, icloud, instagram
  * If "2" is too strict, then override to "0" and use Smart Referer extension (Strict mode + add exceptions) ***/
+// YOU PROBABLY WANT TO ENABLE THIS BELOW (uncomment)
 //user_pref("network.http.referer.XOriginPolicy", 0);
 
 user_pref("browser.messaging-system.whatsNewPanel.enabled", false); // What's New toolbar icon [FF69+]
