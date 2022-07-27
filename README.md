@@ -1,5 +1,5 @@
 # user-overrides.js
-### Arkenfox custom settings overrides
+### [Arkenfox](https://github.com/arkenfox/user.js) custom settings overrides
 If the text is ~like that~ it means the rule is in the file but commented (so unapplied, the rule applied will be the one of Arkenfox)
 
 - Enable DRM
